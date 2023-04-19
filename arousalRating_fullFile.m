@@ -18,7 +18,7 @@ clear all;close all;fclose all;clc;
 %------------ INPUTS ------------%
 
 
-main_file=''; % format: input file,additional path for ouput,neutral,arousal,speaker,start time,end time
+main_file='./ae_yf2553_2__8122016_15min_main.txt'; % format: input file,additional path for ouput,neutral,arousal,speaker,start time,end time
 wav_dir=''; % base folder for wavs
 feat_dir=''; % base folder for feats
 score_dir=''; % base folder for scores
@@ -29,10 +29,10 @@ outputScore_file=''; % output file. format: scores, ground truth
 % wav_dir='../ADOS/data_final/'; % base folder for wavs
 % feat_dir='../ADOS/prosody_subtasks/src/arousal/featsp/'; % base folder for feats
 % score_dir='../ADOS/prosody_subtasks/src/arousal/scorespGlobal/'; % base folder for scores
-% praat_bin='/Applications/Praat.app/Contents/MacOS/Praat'; % location of Praat binary
-% praat_script='batchf0E_perFileTemplate.praat'; % template of the script
+praat_bin='/Applications/Praat.app/Contents/MacOS/Praat'; % location of Praat binary
+praat_script='batchf0E_perFileTemplate.praat'; % template of the script
 % outputScore_file='ADOSpGlobal_scores.txt'; % output file. format: scores, ground truth
-% audio_file='psych.wav';
+audio_file='Arousal EXMP_WAV';
 
 extract_features=1;
 compute_scores=1;

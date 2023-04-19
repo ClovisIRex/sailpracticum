@@ -1,11 +1,9 @@
-input_file$ = "subject.wav"
-output_file$ = "../ADOS/prosody_subtasks/src/arousal/featss/.///2011_06_29-3153/aud_rawVAD/subject/3153-blu2_l_subject_266.wav.txt"
+input_file$ = "Arousal EXMP_WAV"
+output_file$ = "///arostst1_16.wav.txt"
 # This Praat script extracts pitch and intensity for every 10ms
 # This code is a lot based on the one written by Setsuko Shirai
 #input_file$ = "/Users/DannyBone/Desktop/tempdir.wav"
 #output_file$ = "/Users/DannyBone/Desktop/tempdir.txt"
-# Parameter setting section-----------------------
-type_file$ = "wav"
 # Parameter setting section-----------------------
 type_file$ = "wav"
 # Pitch (ac) parameters (detailed parameter setting)

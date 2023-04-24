@@ -18,11 +18,11 @@ clear all;close all;fclose all;clc;
 %------------ INPUTS ------------%
 
 %---- wavs with using VAD ----%
-main_file='CreativeIT_main.txt'; % format: input file,additional path for ouput,speaker,annotation file (annotation file in format col1: time, col2: arousal))
-wav_dir='../data/CreativeIT/choppedVAD/'; % base folder for wavs
-feat_dir='../data/CreativeIT/speechComFeatsChop/'; % base folder for feats
-score_dir='../data/CreativeIT/speechComScoresChop/'; % base folder for scores
-annotation_dir='../data/CreativeIT/annotations_txt/'; % base folder for ratings
+main_file='conf/CreativeIT_main.txt'; % format: input file,additional path for ouput,speaker,annotation file (annotation file in format col1: time, col2: arousal))
+wav_dir='wavs/'; % base folder for wavs
+feat_dir='feats/'; % base folder for feats
+score_dir='scores/'; % base folder for scores
+annotation_dir='ratings/'; % base folder for ratings
 praat_bin='/Applications/Praat.app/Contents/MacOS/Praat'; % location of Praat binary
 praat_script='batchf0E_perFileTemplate.praat'; % template of the script
 arousal_mat='CreativeIT_rating.mat';
@@ -42,9 +42,9 @@ arousal_mat='CreativeIT_rating.mat';
 % % outputScore_file='CreativeIT_scores.txt'; % output file. format: scores, ground truth
 % arousal_mat='CreativeIT_rating.mat';
 extract_features=1;
-compute_scores=1;
-fuse_scores=1;
-annotations_exist=1;
+compute_scores=0;
+fuse_scores=0;
+annotations_exist=0;
 
 %------------ BEGIN MAIN ------------%
 

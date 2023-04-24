@@ -1,5 +1,5 @@
-input_file$ = "Arousal EXMP_WAV"
-output_file$ = "///arostst1_16.wav.txt"
+input_file$ = "wavs/arostst1.wav"
+output_file$ = "feats/ae_yf2553_2__8122016_15min_main.txt/arostst1.wav.txt"
 # This Praat script extracts pitch and intensity for every 10ms
 # This code is a lot based on the one written by Setsuko Shirai
 #input_file$ = "/Users/DannyBone/Desktop/tempdir.wav"
